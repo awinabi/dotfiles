@@ -1,20 +1,23 @@
 {
-	"auto_complete": true,
-	"auto_complete_commit_on_tab": true,
-	"color_scheme": "Packages/Theme - Primer/primer.dark.tmTheme",
-	"copy_with_empty_selection": true,
-	"ensure_newline_at_eof_on_save": true,
-	"font_size": 10,
-	"index_files": true,
-	"rulers":
-	[
-		79
-	],
-	"tab_size": 2,
-	"theme": "Primer.sublime-theme",
-	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true,
-	"word_separators": "./\\()\"'-:,.;<>~@#$%^&*|+=[]{}`~",
-	"ignored_packages": [],
-	"draw_white_space": "all",
+  "auto_complete": true,
+  "auto_complete_commit_on_tab": true,
+  "color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+  "copy_with_empty_selection": true,
+  "draw_white_space": "all",
+  "ensure_newline_at_eof_on_save": true,
+  "font_size": 10,
+  "ignored_packages":
+  [
+    "Vintage"
+  ],
+  "index_files": true,
+  "rulers":
+  [
+    79
+  ],
+  "tab_size": 2,
+  "translate_tabs_to_spaces": true,
+  "trim_trailing_white_space_on_save": true,
+  "word_separators": "./\\()\"'-:,.;<>~@#$%^&*|+=[]{}`~"
 }
+

@@ -1,4 +1,4 @@
-###Vim Setup
+### Vim Setup ###
 
 vim is required. `sudo apt-get install vim`
 
@@ -26,7 +26,7 @@ cp -R vim-colorschemes/colors ~/.vim/
 
 
 
-###Sublime Text 3 Setup
+### Sublime Text 3 Setup ###
 
 `cp -R .config/sublime-text-3/Packages/*  ~/Library/Application\ Support/Sublime\ Text\ 3/Packages `
 

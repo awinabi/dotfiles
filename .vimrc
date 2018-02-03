@@ -27,7 +27,8 @@ Plugin 'tpope/vim-fugitive'
 " Plugin 'user/L9', {'name': 'newL9'}
 
 Plugin 'scrooloose/nerdtree'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'rking/ag.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'bling/vim-airline'
 Plugin 'altercation/vim-colors-solarized'
@@ -51,10 +52,20 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 
+let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
+let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
+  \ --ignore .git
+  \ --ignore .node_modules 
+  \ --ignore .svn
+  \ --ignore .hg
+  \ --ignore .DS_Store
+  \ --ignore "**/*.pyc"
+  \ -g ""'
 
 
 syntax enable
-colorscheme SlateDark
+colorscheme Monokai
+" colorscheme solarized
 map <C-n> :NERDTreeToggle<CR>
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
@@ -65,3 +76,4 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 set number
+set guifont=Menlo\ Regular:h14

@@ -31,10 +31,12 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'rking/ag.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'bling/vim-airline'
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'pangloss/vim-javascript'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'ervandew/supertab'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'leafgarland/typescript-vim'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -50,7 +52,7 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
-
+set directory=$HOME/tmp/swapfiles//
 
 let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
 let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
@@ -62,10 +64,13 @@ let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
   \ --ignore "**/*.pyc"
   \ -g ""'
 
-
+" Get many vim colorschemes from https://github.com/flazz/vim-colorschemes
+" Copy the colors folder to .vim/
 syntax enable
-colorscheme Monokai
+" colorscheme Monokai
 " colorscheme solarized
+colorscheme zenburn
+set background=dark
 map <C-n> :NERDTreeToggle<CR>
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
